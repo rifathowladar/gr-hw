@@ -11,13 +11,27 @@
 //   console.log(boy[i].name + " ago : " + boy[i].age);
 // }
 
-let n = prompt("Please enter Number");
-let jor = 0;
+// let n = prompt("Please enter Number");
+// let jor = 0;
 
-for (let i = 1; i <= n; i++) {
-    if (i % 2 === 0) {
-            jor = jor + i;
-    }
+// for (let i = 1; i <= n; i++) {
+//     if (i % 2 === 0) {
+//             jor = jor + i;
+//     }
+// }
+
+// console.log("1 theke " + n + " porjonto ar jor songkhar jogfol =", jor);
+
+
+
+// Guess the number 
+
+let secretNumber = Math.floor(Math.random() * 20) + 1;
+let guess = prompt("Guess a number between 1 to 20");
+guess = Number(guess);
+
+if (guess === secretNumber) {
+  alert("Correct!");
+} else {
+  alert("Wrong! Try again " + secretNumber);
 }
-
-console.log("1 theke " + n + " porjonto ar jor songkhar jogfol =", jor);
